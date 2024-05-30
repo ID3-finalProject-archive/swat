@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF8DE"
+    tools:context=".HotOrColdActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="379dp"
+        android:layout_height="74dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Which do you eat?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#A3927C"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="231dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#ED7070"
+            android:fontFamily="@font/diplomata"
+            android:onClick="goToHotFoodStyle"
+            android:text="Hot"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginLeft="160dp"
+            android:fontFamily="monospace"
+            android:text="or"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#5888F1"
+            android:fontFamily="@font/diplomata"
+            android:onClick="goToColdFoodStyle"
+            android:text="Cold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

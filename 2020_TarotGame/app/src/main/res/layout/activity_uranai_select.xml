@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UranaiSelect">
+
+    <ImageView
+        android:id="@+id/mainBackground"
+        android:layout_width="417dp"
+        android:layout_height="739dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainbackground" />
+
+    <ImageView
+        android:id="@+id/kokubann"
+        android:layout_width="427dp"
+        android:layout_height="258dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mainBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainBackground"
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/uranaiwosentakusiyou" />
+
+    <ImageButton
+        android:id="@+id/torannpubutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goTotorannpuuranai"
+        app:layout_constraintBottom_toTopOf="@+id/mainBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kokubann"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/buttontorannpu" />
+
+    <ImageButton
+        android:id="@+id/sujibutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToSuujiuranai"
+        app:layout_constraintBottom_toBottomOf="@+id/mainBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/torannpubutton"
+        app:layout_constraintVertical_bias="0.251"
+        app:srcCompat="@drawable/buttonsuji" />
+
+    <ImageButton
+        android:id="@+id/ketuekibutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToKetuekiuranai"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sujibutton"
+        app:layout_constraintVertical_bias="0.741"
+        app:srcCompat="@drawable/buttonketueki" />
+</androidx.constraintlayout.widget.ConstraintLayout>
